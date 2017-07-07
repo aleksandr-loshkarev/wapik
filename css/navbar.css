@@ -81,8 +81,10 @@
   vertical-align:middle;
 }
 
-@media only screen and (max-width: 767px){
-
+@media only screen and (max-width: 768px){
+  .navbar-nav > li > a {
+    color: red;
+  }
   .navbar-toggler {
     display: inline-block;
     vertical-align: top;
