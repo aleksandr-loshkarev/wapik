@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.container::after,
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    max-width: 1056px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h3, p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+h1{
+  font-size: 38px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+p{
+  font-size: 14px;
+}
+
+a{
+  font-family: 'Montserrat', sans-serif;
+}

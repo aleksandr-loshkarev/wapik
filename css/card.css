@@ -1,0 +1,42 @@
+.card {
+  display: inline-block;
+  vertical-align:top;
+  width: 48.011363%;
+}
+.card-image img {
+    display: block;
+    width: 100%;
+}
+
+.card-icon {}
+.card-title {
+  margin-bottom: 5px;
+}
+.card-content {}
+.card-description {}
+.card-description p{
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #ffffff;
+  margin-bottom: 22px;
+}
+
+.card-header {}
+.card-body {}
+.card-footer {}
+.card-hover {}
+
+.card-top {}
+.card-right {}
+.card-left {}
+.card-bottom {}
+
+.card:hover .card-hover {}
+
+@media only screen and (max-width: 1024px){
+  .card-title,
+  .card-description,
+  .card-btn{
+     text-align: center;
+  }
+}

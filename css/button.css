@@ -1,0 +1,31 @@
+.button {
+	display: inline-block;
+	padding: 15px 20px;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	color: #ffffff;
+	background-color: #6fb048;
+	border-radius: 2px;
+}
+
+.button:hover {
+background-color: rgba(255,255,255,.35);
+}
+.button:focus {}
+.button.is-active {}
+
+.btn-petite{
+	padding: 10px 15px;
+	background-color: rgba(255,255,255,.35);
+}
+
+.btn-petite:hover{
+	background-color: #6fb048;
+}
+
+.btn-large{
+	padding: 15px 45px;
+	font-size: 14px;
+}
