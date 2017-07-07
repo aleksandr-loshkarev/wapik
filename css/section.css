@@ -5,23 +5,22 @@
 
 .section-greeting{
   padding: 20px 0;
-  min-height: 575px;
+  height: 575px;
   display: flex;
   align-items: center;
 }
 
-.section {}
-.section-title {}
+.section {
+  padding: 95px 0;
+}
+.section-title {
+  text-align: center;
+}
 .section-header {}
 .section-body {}
 
 @media only screen and (max-width: 1024px){
   .section-greeting{
      justify-content: center;
-  }
-}
-
-@media only screen and (max-width: 767px){
-  .section-greeting{
   }
 }

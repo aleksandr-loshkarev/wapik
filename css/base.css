@@ -47,6 +47,20 @@ h1{
   color: #ffffff;
 }
 
+h2{
+  margin: 0 0 19px;
+  padding: 0 0 19px;
+  font-size: 32px;
+  line-height: 0.625em;
+  font-weight: 300;
+  color: #0f5f5c;
+}
+
+h2::after{
+  content: '';
+  
+}
+
 p{
   font-size: 14px;
 }
