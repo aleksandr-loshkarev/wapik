@@ -11,11 +11,11 @@
 }
 
 .section {
-  padding: 90px 0;
+  padding: 85px 0;
 }
 .section-title {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 52px;
 }
 .section-header {}
 .section .section-body {
@@ -26,8 +26,40 @@
   margin-bottom: 10px;
 }
 
+.section-decoration{
+  text-align: center;
+  padding-top: 23px;
+}
+
+.items-decoration{
+  display: inline-block;
+  vertical-align:top;
+}
+
+.box-decoration{
+  content:"";
+  position: relative;
+  bottom: 0;
+  left: 45px;
+  display: inline-block;
+  width: 2px;
+  height: 90px;
+  background-color: #f2f2f2;
+}
+
+.block-decoration{
+  content:"";
+  position: relative;
+  bottom: 0;
+  display: inline-block;
+  width: 90px;
+  height: 2px;
+  background-color: #f2f2f2;
+}
+
 @media only screen and (max-width: 1024px){
   .section-greeting{
      justify-content: center;
+     height: 350px;
   }
 }

@@ -9,21 +9,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script>
-		function toggler() {
-			$('[data-toggler]').on('click', function(e) {
-				e.preventDefault();
-				var $this = $(this);
-				var hash = $this.attr('href') || $this.data('target');
-				if (!hash) return false;
-				$this.toggleClass('is-active');
-				$(hash).toggleClass('is-show');
-			})
-		}
-
-		toggler();
-	</script>
 </head>
 
 <body>
@@ -85,72 +70,80 @@
 		<main class="main">
 			<div class="section">
 				<div class="container">
-					<div class="section-title">
-						<div class="card card-head">
-							<div class="card-body">
-								<div class="card-title title-decoration">
-									<h2>Best of our features</h2>
+					<div class="section-feature">
+						<div class="section-title">
+							<div class="card card-head">
+								<div class="card-body">
+									<div class="card-title title-decoration">
+										<h2>Best of our features</h2>
+									</div>
+									<div class="card-description">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+										<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+									</div>
 								</div>
-								<div class="card-description">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-									<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+							</div>
+						</div>
+						<div class="section-body">
+							<div class="card card-feature-items">
+								<div class="card-item">
+									<div class="card-feature">
+										<div class="card-header">
+											<div class="card-icon">
+												<img src="images/vector-smart-object-1.png" alt="image description">
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="card-title">
+												<h3>Ionicons</h3>
+											</div>
+											<div class="card-description">
+												<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-item">
+									<div class="card-feature">
+										<div class="card-header">
+											<div class="card-icon">
+												<img src="images/vector-smart-object-2.png" alt="image description">
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="card-title">
+												<h3>Creative Design</h3>
+											</div>
+											<div class="card-description">
+												<p>Maecenas faucibus mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-item">
+									<div class="card-feature">
+										<div class="card-header">
+											<div class="card-icon">
+												<img src="images/vector-smart-object-3.png" alt="image description">
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="card-title">
+												<h3>Photoshop and Sketch</h3>
+											</div>
+											<div class="card-description">
+												<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="section-body">
-						<div class="card card-feature-items">
-							<div class="card-item">
-								<div class="card-feature">
-									<div class="card-header">
-										<div class="card-icon">
-											<img src="images/vector-smart-object-1.png" alt="image description">
-										</div>
-									</div>
-									<div class="card-body">
-										<div class="card-title">
-											<h3>Ionicons</h3>
-										</div>
-										<div class="card-description">
-											<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="card-item">
-								<div class="card-feature">
-									<div class="card-header">
-										<div class="card-icon">
-											<img src="images/vector-smart-object-2.png" alt="image description">
-										</div>
-									</div>
-									<div class="card-body">
-										<div class="card-title">
-											<h3>Creative Design</h3>
-										</div>
-										<div class="card-description">
-											<p>Maecenas faucibus mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="card-item">
-								<div class="card-feature">
-									<div class="card-header">
-										<div class="card-icon">
-											<img src="images/vector-smart-object-3.png" alt="image description">
-										</div>
-									</div>
-									<div class="card-body">
-										<div class="card-title">
-											<h3>Photoshop and Sketch</h3>
-										</div>
-										<div class="card-description">
-											<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-										</div>
-									</div>
-								</div>
-							</div>
+					<div class="section-decoration">
+						<div class="items-decoration">
+							<div class="box-decoration"></div>
+							<div class="block-decoration"></div>
 						</div>
 					</div>
 				</div>
@@ -158,6 +151,21 @@
 		</main>
 		<footer class="footer"></footer>
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		function toggler() {
+			$('[data-toggler]').on('click', function(e) {
+				e.preventDefault();
+				var $this = $(this);
+				var hash = $this.attr('href') || $this.data('target');
+				if (!hash) return false;
+				$this.toggleClass('is-active');
+				$(hash).toggleClass('is-show');
+			})
+		}
+
+		toggler();
+	</script>
 </body>
 
 </html>

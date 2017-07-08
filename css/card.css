@@ -15,9 +15,10 @@
   width: 65px;
 }
 
-.card-content {}
-.card-description p{
+.section-title .card-description p{
   color: #83a7a5;
+  font-size: 15px;
+  line-height: 1.4em;
 }
 
 .section-greeting .card-description p{
@@ -70,8 +71,8 @@
   }
 }
 
-@media only screen and (min-width: 767px){
-  .card {
-    max-width: 100%;
+@media only screen and (max-width: 768px){
+  .card{
+     max-width: 80%;
   }
 }

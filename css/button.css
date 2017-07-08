@@ -29,3 +29,11 @@ background-color: rgba(255,255,255,.35);
 	padding: 15px 45px;
 	font-size: 14px;
 }
+
+@media only screen and (max-width: 768px){
+	.btn-petite{
+		display: block;
+		background-color: #0f5f5c;
+    padding: 15px 10px;
+	}
+}
