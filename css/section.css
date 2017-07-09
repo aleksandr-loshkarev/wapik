@@ -28,7 +28,7 @@
 
 .section-decoration{
   text-align: center;
-  padding-top: 23px;
+  padding-top: 2px;
 }
 
 .items-decoration{
@@ -57,9 +57,27 @@
   background-color: #f2f2f2;
 }
 
+.section-feature-secondary{
+  padding: 42px 0 0;
+}
+
+.section-feature-secondary .card-title{
+  margin: 0 0 19px;
+}
+
 @media only screen and (max-width: 1024px){
   .section-greeting{
      justify-content: center;
      height: 350px;
+  }
+
+  .section{
+    padding: 30px;
+  }
+}
+@media only screen and (max-width: 768px){
+
+  .section-decoration{
+    display: none;
   }
 }

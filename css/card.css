@@ -32,6 +32,7 @@
   display: inline-block;
   vertical-align:top;
   text-align: center;
+  width: 100%;
 }
 
 .card-feature-items{
@@ -41,8 +42,6 @@
 }
 
 .card-feature .card-icon{
-  display: -webkit-inline-flex;
-  display: -ms-inline-flex;
   display: inline-flex;
   margin-bottom: 25px;
 }
@@ -52,6 +51,7 @@
   vertical-align:bottom;
   width: 33.33%;
   padding: 0 10px;
+  margin-bottom: 20px;
 }
 
 .card-feature h3{
@@ -61,6 +61,30 @@
 
 .card-feature .card-title{
   margin-bottom: 20px;
+}
+
+.section-feature-secondary .card-feature-items{
+  margin: 0 -20px;
+}
+
+.card-item-secondary{
+  width: 50%;
+  margin-bottom: 54px;
+  padding: 0 20px;
+}
+
+.card-feature-secondary{
+  text-align: left;
+}
+
+.card-feature-secondary .card-header{
+  display: flex;
+  align-items: center;
+}
+
+.card-feature-secondary .card-icon{
+  display: inline-flex;
+  margin: 0 23px 17px 6px;
 }
 
 @media only screen and (max-width: 1024px){
@@ -74,5 +98,16 @@
 @media only screen and (max-width: 768px){
   .card{
      max-width: 80%;
+  }
+
+  .card-feature-items {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .card-item{
+    display: block;
+    width: 100%;
+    padding: 0;
   }
 }
