@@ -30,6 +30,11 @@ background-color: rgba(255,255,255,.35);
 	font-size: 14px;
 }
 
+.btn-product{
+	padding: 13px 30px;
+	background-color: #83a7a5;
+}
+
 @media only screen and (max-width: 768px){
 	.btn-petite{
 		display: block;
