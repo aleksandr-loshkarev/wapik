@@ -61,7 +61,8 @@
   margin: 0 0 19px;
 }
 
-.section-responsive{
+.section-responsive,
+.section-details{
   background-color: #eef1ec;
   padding-top: 72px;
 }
@@ -74,6 +75,14 @@
   display: flex;
   min-height: 680px;
   align-items: center;
+}
+
+.section-details{
+  padding-top: 64px;
+}
+
+.section-details-box{
+  min-height: 443px;
 }
 
 @media only screen and (max-width: 1024px){
@@ -114,7 +123,11 @@
   }
 
   .section-box{
-    margin-top: 15px;
+    margin: 15px 0;
     min-height: 370px;
+  }
+
+  .section-details {
+    padding: 20px 0;
   }
 }

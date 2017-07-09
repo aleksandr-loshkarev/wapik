@@ -170,6 +170,21 @@
   color: #6fb048;
 }
 
+.card-details .card-left{
+  margin-right: 5.3%;
+  margin-top: 26px;
+  margin-bottom: 60px;
+}
+
+.card-details .card-right{
+  max-width: 100%;
+  margin-right: -225px;
+}
+
+.card-details p{
+  line-height: 1.6em;
+}
+
 @media only screen and (max-width: 1024px){
   .card-title,
   .card-description,
@@ -243,5 +258,13 @@
 
   .card-quote {
     font-size: 15px;
+  }
+
+  .card-details .card-left{
+    margin-bottom: 20px;
+  }
+
+  .card-details .card-right{
+    margin-right: 0;
   }
 }
