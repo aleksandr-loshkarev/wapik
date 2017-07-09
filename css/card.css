@@ -1,8 +1,17 @@
 .card {
   display: inline-block;
   vertical-align:top;
+}
+
+
+.card-title{
+  margin-bottom: 10px;
+}
+
+.section-greeting .card{
   max-width: 48.011363%;
 }
+
 .card-image img {
     display: block;
     width: 100%;
@@ -59,10 +68,6 @@
   font-size: 16px;
 }
 
-.card-feature .card-title{
-  margin-bottom: 20px;
-}
-
 .section-feature-secondary .card-feature-items{
   margin: 0 -20px;
 }
@@ -87,15 +92,100 @@
   margin: 0 23px 17px 6px;
 }
 
+.card-left{
+  margin-right: 7.7%;
+  display: inline-block;
+  vertical-align:top;
+  max-width: 42.246212%;
+}
+
+.card-left .card-image{
+  margin-left: 15px;
+}
+
+.card-responsive .card-body{
+  display: inline-block;
+  vertical-align:top;
+  width: 47.348484%;
+  padding-top: 123px;
+}
+
+.card-responsive .card-title{
+  margin-bottom: 15px;
+}
+
+.card-responsive .card-description p{
+  line-height: 1.6em;
+  margin-bottom: 22px;
+}
+
+.card-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 100%;
+}
+
+.card-list li{
+  margin-bottom: 15px;
+  color: #83a7a5;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-list li:before{
+  content: '';
+  display: inline-block;
+  vertical-align:top;
+  margin: -4px 9px 0 -2px;
+  width:26px;
+  height: 26px;
+  background: url(../images/card-list-before.png) no-repeat;
+}
+
+.card-box{
+  display: flex;
+  align-items: center;
+}
+
+.card-box .card-left{
+  margin-right: 13.3%;
+  max-width: 48.295454%;
+}
+
+.card-right{
+  max-width: 37.878787%;
+}
+
+.card-quote{
+  margin: 0 0 18px;
+  font-size: 22px;
+  line-height: 1.82em;
+  font-family: 'Merriweather', serif;
+  color: #83a7a5;
+}
+
+.card-autor p{
+  font-weight: 500;
+  color: #6fb048;
+}
+
 @media only screen and (max-width: 1024px){
   .card-title,
   .card-description,
   .card-btn{
      text-align: center;
   }
+
+  .card-responsive .card-description,
+  .card-responsive .card-title{
+    text-align: left;
+  }
+
 }
 
 @media only screen and (max-width: 768px){
+  .section-greeting .card,
   .card{
      max-width: 80%;
   }
@@ -109,5 +199,49 @@
     display: block;
     width: 100%;
     padding: 0;
+  }
+
+  .card-responsive-items{
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .card-responsive .card-description,
+  .card-responsive .card-title{
+    text-align: center;
+  }
+
+  .card-left{
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .card-responsive .card-body{
+    padding-top: 0;
+    width: 80%;
+  }
+
+  .card-left .card-image{
+    margin: 0;
+  }
+
+  .card-responsive .card-left{
+    margin-bottom: 20px;
+  }
+
+  .card-box{
+    margin: 0 auto;
+    max-width: 80%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card-box .card-left{
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .card-quote {
+    font-size: 15px;
   }
 }

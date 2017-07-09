@@ -11,7 +11,7 @@
 }
 
 .section {
-  padding: 85px 0;
+  padding: 85px 0 73px;
 }
 .section-title {
   text-align: center;
@@ -20,10 +20,6 @@
 .section-header {}
 .section .section-body {
   padding: 15px 0;
-}
-
-.section .card-title{
-  margin-bottom: 10px;
 }
 
 .section-decoration{
@@ -65,6 +61,21 @@
   margin: 0 0 19px;
 }
 
+.section-responsive{
+  background-color: #eef1ec;
+  padding-top: 72px;
+}
+
+.section-responsive .section-title{
+  margin-bottom: 17px;
+}
+
+.section-box{
+  display: flex;
+  min-height: 680px;
+  align-items: center;
+}
+
 @media only screen and (max-width: 1024px){
   .section-greeting{
      justify-content: center;
@@ -74,10 +85,36 @@
   .section{
     padding: 30px;
   }
+
+  .section-box{
+    min-height: 500px;
+  }
 }
 @media only screen and (max-width: 768px){
 
+  .section-feature{
+    border-bottom: 2px solid #f2f2f2;
+  }
+
   .section-decoration{
     display: none;
+  }
+
+  .section-feature-secondary .card-feature-items{
+    margin: 0;
+  }
+
+  .section-responsive{
+    padding-top: 30px;
+  }
+
+  .section-box{
+    display: block;
+    height: auto;
+  }
+
+  .section-box{
+    margin-top: 15px;
+    min-height: 370px;
   }
 }
