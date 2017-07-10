@@ -215,10 +215,6 @@
   color: #0f5f5c;
 }
 
-.product-price i {
-  font-size: 65px;
-}
-
 .product-month{
   margin-bottom: 22px;
 }
@@ -270,6 +266,10 @@
   margin-bottom: 10px;
 }
 
+.card-green h2{
+  color: #6fb048;
+}
+
 .card-help .card-description{
   max-width: 55%;
   margin: 0 auto;
@@ -282,6 +282,107 @@
 .card-support p{
   font-size: 18px;
   color: #0f5f5c;
+}
+
+.usd{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-download .card-title{
+  margin-bottom: 0;
+}
+
+.card-download h2{
+  font-size: 28px;
+}
+
+.card-download .card-description p{
+  font-size: 15px;
+}
+
+.card-footer-items{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-footer{
+  max-width: 22.432424%;
+}
+
+.card-footer h4{
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #0f5f5c;
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+.card-footer .card-logo{
+  margin-bottom: 10px;
+}
+
+.card-contact{
+  margin-bottom: 7px;
+}
+
+.card-email .fa-at{
+  font-size: 13px;
+}
+
+.contact-email{
+  color: #0f5f5c;
+  font-weight: bold;
+}
+
+.social-items{
+  display: inline-flex;
+}
+
+.social{
+  margin-right: -5px;
+}
+
+.social-icon{
+  display: flex;
+  padding: 0 5px;
+}
+
+.social-icon a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background-color: red;
+  border-radius: 15px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.social-icon a:hover{
+  opacity: .5;
+}
+
+.social-twitter a{
+  background-color: #55acee;
+}
+
+.social-facebook a{
+  background-color: #3b5998;
+}
+
+.social-instagram a{
+  background-color: #3f729b;
+}
+
+.social-dribbble a{
+  background-color: #ea4c89;
+}
+
+.social-github a{
+  background-color: #333333;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -339,16 +440,21 @@
     flex-direction: column;
     text-align: center;
   }
-  .card-box .card-left {
+
+  .card-box .card-left,
+  .card-download{
     margin: 0;
     max-width: 100%;
   }
+
   .card-quote {
     font-size: 15px;
   }
+
   .card-details .card-left {
     margin-bottom: 20px;
   }
+
   .card-details .card-right {
     margin-right: 0;
   }
@@ -363,8 +469,7 @@
     max-width: 80%
   }
 
-  .product-price p,
-  .product-price i{
+  .product-price p{
     font-size: 55px;
   }
 
@@ -373,7 +478,23 @@
     align-items: center;
   }
 
-  .card-included-items .card-feature{
+  .card-included-items .card-feature,
+  .card-footer{
     text-align: center;
+  }
+
+  .card-download{
+    margin-bottom: 20px;
+  }
+
+  .card-footer-items{
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .card-footer{
+    border-bottom: 2px solid #f8f8f8;
+    margin-bottom: 15px;
   }
 }

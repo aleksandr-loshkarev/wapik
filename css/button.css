@@ -35,6 +35,15 @@ background-color: rgba(255,255,255,.35);
 	background-color: #83a7a5;
 }
 
+.download-btn{
+	padding: 13px 25px;
+	font-size: 13px;
+}
+
+.download-btn:hover{
+	background-color: #83a7a5;
+}
+
 @media only screen and (max-width: 768px){
 	.btn-petite{
 		display: block;

@@ -85,6 +85,26 @@
   vertical-align:middle;
 }
 
+.navbar-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-list li{
+  margin-bottom: 9px;
+}
+
+.navbar-list a{
+  font-size: 13px;
+  color: #83a7a5;
+  text-decoration: none;
+}
+
+.navbar-list a:hover{
+  opacity: 0.5;
+}
+
 @media only screen and (max-width: 768px){
   .navbar{
     position: relative;

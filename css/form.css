@@ -1,7 +1,29 @@
-.form {}
-.form-group {}
+.email-form fieldset {
+	padding: 0;
+	border: none;
+}
+.form-group {
+	position: relative;
+}
 .form-label {}
-.form-control {}
+.form-control {
+	width: 100%;
+	background-color: #eef1ec;
+	border: 1px solid #eef1ec;
+	border-radius: 2px;
+	padding: 10px 12px;
+	font-size: 13px;
+	color: #83a7a5;
+}
+
+.aircraft-image{
+	position: absolute;
+	top: 8px;
+	right: 13px;
+	background: none;
+	border: none;
+}
+
 .form-chekbox {}
 .form-radio {}
 
