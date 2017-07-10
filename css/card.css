@@ -2,12 +2,21 @@
   display: block;
 }
 
+.card-about{
+  text-align: center;
+}
+
 .card-title {
   margin-bottom: 10px;
 }
 
 .section-greeting .card {
   max-width: 48.011363%;
+}
+
+.card-about-us{
+  max-width: 67.234848%;
+  margin: 0 auto;
 }
 
 .card-image img {
@@ -26,6 +35,10 @@
   color: #83a7a5;
   font-size: 15px;
   line-height: 1.4em;
+}
+
+.card-title-about{
+  margin-bottom: 35px;
 }
 
 .section-greeting .card-description p {
@@ -385,6 +398,25 @@
   background-color: #333333;
 }
 
+.card-team-items{
+  display: inline-flex;
+  margin: 0 -20px;
+}
+
+.card-team{
+  padding: 0 20px;
+  max-width: 33.33%;
+}
+
+.card-team .card-header{
+  margin-bottom: 15px;
+}
+
+.card-team .card-autor,
+.card-team .card-profession{
+  margin-bottom: 5px;
+}
+
 @media only screen and (max-width: 1024px) {
   .card-title, .card-description, .card-btn {
     text-align: center;
@@ -497,4 +529,16 @@
     border-bottom: 2px solid #f8f8f8;
     margin-bottom: 15px;
   }
+
+  .card-team-items{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+    .card-team{
+      max-width: 50%;
+      text-align: center;
+      margin-bottom: 25px;
+    }
 }

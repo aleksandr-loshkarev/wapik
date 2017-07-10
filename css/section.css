@@ -3,11 +3,20 @@
   background-size: cover;
 }
 
+.background-heave{
+  background: url(../images/bg-header-heave.jpg) no-repeat;
+  background-size: cover;
+}
+
 .section-greeting{
   padding: 20px 0;
   height: 575px;
   display: flex;
   align-items: center;
+}
+
+.section-about{
+  justify-content: center;
 }
 
 .section {
@@ -124,6 +133,10 @@
   justify-content: space-between;
 }
 
+.section-about-us{
+  padding: 78px 0;
+}
+
 @media only screen and (max-width: 1024px){
   .section-greeting{
      justify-content: center;
@@ -186,5 +199,9 @@
     padding-top: 5px;
     flex-direction: column;
     align-items: center;
+  }
+
+  .section-about-us{
+    padding: 20px 0;
   }
 }

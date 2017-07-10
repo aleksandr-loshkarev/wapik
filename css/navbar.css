@@ -105,6 +105,10 @@
   opacity: 0.5;
 }
 
+.phone-light p{
+  color: #ffffff;
+}
+
 @media only screen and (max-width: 768px){
   .navbar{
     position: relative;
